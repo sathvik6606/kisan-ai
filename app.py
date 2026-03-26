@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 import json
-from gemini_service import get_gemini_response
+from ai_service import get_ai_response
 from weather_service import get_weather
 
 app = Flask(__name__)

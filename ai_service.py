@@ -14,7 +14,7 @@ headers = {
 }
 
 
-def get_gemini_response(query, context=""):
+def get_ai_response(query, context=""):
     prompt = f"""You are an AI assistant helping farmers.
 Context: {context}
 Question: {query}
