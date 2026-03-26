@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Kisan AI Assistant</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="chat-container">
+
+<div class="header">
+🌾 Kisan AI Assistant
+</div>
+
+<div id="chatbox"></div>
+
+<div class="input-area">
+<input id="message" placeholder="Ask about crops, weather, farming..." />
+<button onclick="sendMessage()">Send</button>
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
