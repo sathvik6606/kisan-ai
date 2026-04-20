@@ -37,7 +37,7 @@ def chat():
         if "weather" in query or "rain" in query:
             print("WEATHER BRANCH")
             weather_info = get_weather()
-            response = get_gemini_response(query, context=weather_info)
+            response = get_ai_response(query, context=weather_info)
 
         # Knowledge base queries
         elif query in knowledge_base:
